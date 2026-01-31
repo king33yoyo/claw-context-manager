@@ -1,0 +1,35 @@
+{
+  "name": "claw-context-manager",
+  "version": "1.0.0",
+  "description": "OpenClaw 会话上下文管理工具 - 自动分析、压缩和同步会话记录",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "test": "tsx test/**/*.test.ts",
+    "lint": "eslint src --ext .ts",
+    "start": "node dist/index.js"
+  },
+  "bin": {
+    "claw-context": "./dist/cli.js"
+  },
+  "keywords": [
+    "openclaw",
+    "ai",
+    "assistant",
+    "context",
+    "memory"
+  ],
+  "author": "Happy AI Assistant",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
